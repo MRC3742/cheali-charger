@@ -14,7 +14,9 @@ Features
 --------
 - Li-ion, LiPo, LiPo-4.30V, LiPo-4.35V, LiFe:
   - charging
+    - terminates charging when the current lowers to 10% of Ic (by default, adjustable in battery settings)
   - fast charging
+    - terminates charging when the current lowers to 20% of Ic
   - charging + balancing
   - discharging
   - balancing
@@ -42,7 +44,7 @@ Features
 - Input voltage monitoring
 - Memory for 30 batteries
 - LogView support
-- CALIBATION!
+- CALIBRATION!
 
 
 WARNING
@@ -76,6 +78,7 @@ Hardware
 
 **Unsupported**
 - [Turnigy Accucel-6 80W Balancer/Charger](http://www.hobbyking.com/hobbyking/store/__64345__Turnigy_Accucel_6_80W_10A_Balancer_Charger_LiHV_Capable.html) - Based on an older, uncommon CPU. See [#106](https://github.com/stawel/cheali-charger/issues/106)
+- Imax B6 Mini 1-6 60W Balancer/Charger - Same reason as above
 - **any charger listed above with an unknown CPU** (CPU not labeled)
 
 Usage:
@@ -178,7 +181,6 @@ Troubleshooting
 Useful materials
 ----------------
 - [Iggnus fork](https://github.com/Iggnus/cheali-charger-i1), branch: [v0.99](https://github.com/Iggnus/cheali-charger-i1/tree/v0.99), [v0.33+](https://github.com/Iggnus/cheali-charger-i1/tree/v0.33+)
-- [njozsef fork](https://github.com/njozsef/cheali-charger-test1)
 - [sasam M0517 flash tools](https://github.com/sasam/M0517_flash_tools)
 - [Cheali Charger v1.00 Manual / User Guide](docs/users_docs/Cheali Charger 1.00 User Manual English_draft_002.pdf) (draft 002) by PascalRZ
 - Cheali Charger V0.33m - User Guide: [English](https://docs.google.com/document/d/1Nv2vBXbWo6qE2U9rXZfzVDTfWu3j778flImbFJp74tk), [Hungarian](https://docs.google.com/file/d/0B1RXXTatsA1cWVJYbERUSWo5Q28)
